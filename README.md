@@ -26,7 +26,10 @@ __Index:__
 ---
 __Result:__<br>
 
-![COVID-19 Cases](https://github.com/KasiChennupati/Covid19-Data-Analysis-and-Visualisation/blob/main/Plots/Covid-19%20progression%20over%20days%20in%20the%20World.png)
+
+
+![COVID-19 Cases](Plots/Covid_19_progression_over_days_in_the_World.png)
+
 
 ---
 
@@ -39,7 +42,6 @@ The Notebook Executes perfectly in VS code But Plottly animations doesnot work. 
 The Only way to make the code run and check the animations is running the code in .py file in the Main directory Folder.
 <br>
 Still working on the root cause!!!
-<br> The Project file is also uploaded to [GitHub](https://kasichennupati.github.io/Covid19-Data-Analysis-and-Visualisation/)
 
 ---
 
@@ -98,8 +100,8 @@ The Required DataSet to work on<br>
 ## 3. Data Acquisition
 
 
-Download the Datafrom the following link:<br><br>
- https://github.com/CSSEGISandData/COVID-19
+Download the Datafrom the following links:<br><br>
+ https://github.com/CSSEGISandData/COVID-19 <br>
  https://github.com/CSSEGISandData/COVID-19/tree/master/csse_covid_19_data/csse_covid_19_daily_reports/
 
 
@@ -112,7 +114,8 @@ The files naming convention:<br>
 Since the files follow same naming format and type <br>
 The data can be loaded in to a data frame through a loop
 
-
+__or__
+we can directly load the data from the github repository as they update the data.
 
 ---
 <a id="Data-Processing-Cleaning"></a>
