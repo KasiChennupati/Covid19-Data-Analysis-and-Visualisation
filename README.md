@@ -1,37 +1,153 @@
-## Welcome to GitHub Pages
+## Covid-19 Data Analysis and Visualisation
 
-You can use the [editor on GitHub](https://github.com/KasiChennupati/Covid19-Data-Analysis-and-Visualisation/edit/main/README.md) to maintain and preview the content for your website in Markdown files.
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
 
-### Markdown
+Data Source: The Data is aquired from the John Hopkins Github Data Repository found through kaggle.
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+__Index:__
 
-```markdown
-Syntax highlighted code block
+1. [Disclaimer](#Disclaimer)
+1. [Introduction](#Introduction)
+1. [Scope](#Scope)
+1. [Requirements](#Requirements)
+    1. [Python Dependencies](Python-Dependencies)
+    1. [Data Source](Data-Source)
+1. [Data Acquisition](#Data-Acquisition)
+1. [Data Processing and Cleaning](#Data-Processing-Cleaning)
+    1. [Filling Null Values](#Fil_null)
+    1. [Changing Column DataTypes](#Changing-Column-DataTypes)
+    1. [Adding Enrichment columns](#Adding-Enrichment-columns)
+1. [Data Visualization](#Data-Visualization)
+    1. [COVID-19 Cases Progression Over Days in the World](#COVID-world-map)
+    1. [COVID-19 Cases Progression In UK, Spain, France, Russia, Brazil, India, US](#COVID-top-7-map)
+    1. [Covid-19 Top 7 countries](#COVID-top-7-bar)
+1. [Further Scope](#Future-Scope)
+1. [Resources](#Resources)
+---
+__Result:__<br>
 
-# Header 1
-## Header 2
-### Header 3
+![COVID-19 Cases](https://github.com/KasiChennupati/Covid19-Data-Analysis-and-Visualisation/blob/main/Plots/Covid-19%20progression%20over%20days%20in%20the%20World.png)
 
-- Bulleted
-- List
+---
 
-1. Numbered
-2. List
+<a id='Disclaimer'></a>
 
-**Bold** and _Italic_ and `Code` text
+***Disclaimer!!*** <br>
+Ran into issues with running the notebook in Browser without hanging the browser.<br>
+The Notebook Executes perfectly in VS code But Plottly animations doesnot work. <br>
+<br>
+The Only way to make the code run and check the animations is running the code in .py file in the Main directory Folder.
+<br>
+Still working on the root cause!!!
+<br> The Project file is also uploaded to [GitHub](https://kasichennupati.github.io/Covid19-Data-Analysis-and-Visualisation/)
 
-[Link](url) and ![Image](src)
+---
+
+<a id="Introduction"></a>
+
+## Introduction
+
+The data set used for the Data Analysis is the John Hopkins Covid-19 Data repository.
+The data is downloaded from the [John Hopkins github data repository](https://github.com/CSSEGISandData/COVID-19)
+
+<br>
+
+The Covid Cases are documented and reported by the JohnHopkins University as Daily Reports and Time Series Data sets.<br>
+For the process of analysing and visualising the data the numpy, pandas, plotly packages are used in the process.<br>
+<br>
+---
+<br>
+
+<a id="Scope"></a>
+
+## Scope
+
+To Analyze the Covid-19 confirmed cases in the world and the Top countries at risk.
+
+
+<br>
+---
+<br>
+<a id="Requirements"></a>
+
+## Requirements
+
+<br>
+Inorder to successfully conduct the analysis<br>
+The Required Python Modules<br>
+
+1. Pandas
+1. Numpy
+1. Plottly
+ 
+The Required DataSet to work on<br>
+
+
+### Python Dependencies
+
+```
+!pip3 install numpy pandas plotly
 ```
 
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
+<br>
+---
+<br>
 
-### Jekyll Themes
+<a id="Data-Acquisition"></a>
 
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/KasiChennupati/Covid19-Data-Analysis-and-Visualisation/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
+## 3. Data Acquisition
 
-### Support or Contact
 
-Having trouble with Pages? Check out our [documentation](https://docs.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
+Download the Datafrom the following link:<br><br>
+ https://github.com/CSSEGISandData/COVID-19
+ https://github.com/CSSEGISandData/COVID-19/tree/master/csse_covid_19_data/csse_covid_19_daily_reports/
+
+
+The Data is downloaded and saved in the local Current Working Directory in a new folder DataSource. <br>
+But the data in the Daily reports folder are CSV files.<br>
+<br>
+The files naming convention:<br>
+"MM-DD-YYYY.csv"<br>
+
+Since the files follow same naming format and type <br>
+The data can be loaded in to a data frame through a loop
+
+
+
+---
+<a id="Data-Processing-Cleaning"></a>
+
+## 3.A Data Processing and Cleaning
+
+<a id="Fil_null"></a>
+### Filling Null values
+
+The data frame has two Country region columns one of the columns needs to be filled with the other and drop the other column.
+
+<a id="Changing-Column-DataTypes"></a>
+
+### Changing Column DataTypes
+
+<a id="Adding-Enrichment-columns"></a>
+
+### Adding Enrichment columns
+
+### Data Transformation
+
+<a id="Data-Visualization"></a>
+---
+## Data Visualization
+
+[Top](#Introduction)
+
+<a id="COVID-world-map"></a>
+---
+### COVID-19 Cases Progression Over Days in the World
+
+<a id="COVID-top-7-map"></a>
+---
+### COVID-19 Cases Progression In UK, Spain, France, Russia, Brazil, India, US
+
+<a id="COVID-top-7-Bar"></a>
+---
+### COVID-19 Cases Bar Plot for UK, Spain, France, Russia, Brazil, India, US'
