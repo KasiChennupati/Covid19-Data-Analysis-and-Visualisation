@@ -101,8 +101,8 @@ The Required DataSet to work on<br>
 
 
 Download the Datafrom the following links:<br><br>
- https://github.com/CSSEGISandData/COVID-19 <br>
- https://github.com/CSSEGISandData/COVID-19/tree/master/csse_covid_19_data/csse_covid_19_daily_reports/
+ [JHUCSSEGIS-COVID_Data_Repository](https://github.com/CSSEGISandData/COVID-19) <br>
+ [JHUCSSEGIS-COVID_DailyReports](https://github.com/CSSEGISandData/COVID-19/tree/master/csse_covid_19_data/csse_covid_19_daily_reports/)
 
 
 The Data is downloaded and saved in the local Current Working Directory in a new folder DataSource. <br>
